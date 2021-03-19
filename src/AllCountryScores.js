@@ -8,7 +8,7 @@ let AllCountryScores = [
         scores: [{ n: "groundkeeper willie", s: 4000 }, { n: "Neill", s: 999999 }, { n: "braveheart", s: -200 }]
     }, {
         name: "England",
-        scores: [{ n: "Jonny", s: 202020 }, { n: "Chris", s: 202021 }]
+        scores: [{ n: "Jonny", s: 202020 }, { n: "eggy", s: 202021 }]
     }, {
         name: "Brazil",
         scores: [{ n: "Mozart", s: 999 }]

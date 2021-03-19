@@ -11,11 +11,17 @@ import AllCountryScores from './AllCountryScores';
 
 
 
+
+
 function App() {
+
+  const countries = AllCountryScores.sort((a, b) => {
+    return a.name.localeCompare(b.name);
+  })
   return (
     <div>
       <Heading />
-      <HighScoresTable country={AllCountryScores} />
+      <HighScoresTable country={countries} />
 
     </div>
   );
