@@ -1,29 +1,35 @@
 import React from 'react';
+import ScoreSort from './ScoreSort';
+
 
 
 function HighScoreTable(props) {
-    console.log(props)
+
+
+
+
+
+    console.log('sorting1', props.sorting);
+
     return (
         <div className="main-container">
 
+
             {props.country.map((country) => {
+
 
                 return (
                     <div className="container">
                         <h2>Country: {country.name}</h2>
-                        <ul className="ul">
-                            {country.scores.map((el) => {
-                                return <li> <span>Name: </span> {el.n} <br></br><span>Score: </span>{el.s}</li>
 
-                            })}
-                        </ul>
+                        <ScoreSort country={country} sorting={props.sorting} />
+
                     </div>
 
                 );
             })}
 
-        </div>
-
+        </div >
     );
 
 
