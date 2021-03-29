@@ -45,7 +45,7 @@ function App() {
       } else {
         return "ascending";
       }
-      console.log('sort0', sort);
+
     });
   };
 
